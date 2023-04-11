@@ -8,7 +8,6 @@ import { SignUpPage } from "./pages/SignUpPage";
 import { PrivateRoute } from "./components/routing/PrivateRoute";
 import { PublicRoute } from "./components/routing/PublicRoute";
 import { EditUsersPage } from "./pages/EditUsersPage";
-import { getSession } from "./storage/session";
 
 function App() {
   return (
@@ -24,7 +23,7 @@ function App() {
             }
           />
           <Route
-            path="edit"
+            path="users"
             element={
               <PrivateRoute>
                 <EditUsersPage />
