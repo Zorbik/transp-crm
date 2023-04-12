@@ -7,14 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { Container } from "react-bootstrap";
 import { db } from "../firebase/config";
-import {
-  collection,
-  doc,
-  getDoc,
-  getDocs,
-  query,
-  where,
-} from "firebase/firestore";
+import { collection, getDocs, query, where } from "firebase/firestore";
 import { updateCollection } from "../firebase/updateCollection";
 
 export const LogInPage = () => {
