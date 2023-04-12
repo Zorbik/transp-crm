@@ -17,10 +17,14 @@ export const Appbar = () => {
         <Nav className="me-auto">
           {email && (
             <NavDropdown title={<GiHamburgerMenu />} id="basic-nav-dropdown">
-              <NavDropdown.Item href="/">Add trip</NavDropdown.Item>
+              <NavDropdown.Item href="#" onClick={() => navigate("/")}>
+                Add trip
+              </NavDropdown.Item>
               {email == adminEmail && <NavDropdown.Divider />}
               {email == adminEmail && (
-                <NavDropdown.Item href="users">Edit users</NavDropdown.Item>
+                <NavDropdown.Item href="#" onClick={() => navigate("/users")}>
+                  Edit users
+                </NavDropdown.Item>
               )}
             </NavDropdown>
           )}

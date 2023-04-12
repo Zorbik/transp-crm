@@ -73,11 +73,13 @@ export const SignUpPage = () => {
         }}
       >
         Already have an account?{" "}
-        <Nav activeKey="signup">
-          <Nav.Item>
-            <Nav.Link href="/login">LogIn</Nav.Link>
-          </Nav.Item>
-        </Nav>
+        <Button
+          variant="link"
+          onClick={() => navigate("/login")}
+          style={{ border: "none" }}
+        >
+          LogIn
+        </Button>
       </Form.Text>
     </Form>
   );

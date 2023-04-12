@@ -95,11 +95,13 @@ export const LogInPage = () => {
           }}
         >
           Don't have login?{" "}
-          <Nav activeKey="signup">
-            <Nav.Item>
-              <Nav.Link href="/signup">Register</Nav.Link>
-            </Nav.Item>
-          </Nav>
+          <Button
+            variant="link"
+            onClick={() => navigate("/signup")}
+            style={{ border: "none" }}
+          >
+            Register
+          </Button>
         </Form.Text>
       </Form>
       <Button variant="light" onClick={onClick}>
